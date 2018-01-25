@@ -17,5 +17,15 @@ pipeline {
         echo 'Executing Run Container Stage'
       }
     }
+    stage('Test Container') {
+      steps {
+        echo 'Running Test Stage'
+      }
+    }
+    stage('Push Image') {
+      steps {
+        echo 'Push Image To Docker DTR'
+      }
+    }
   }
 }
